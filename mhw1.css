@@ -1,0 +1,313 @@
+/* layout generali */
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0px;
+    font-family: Optima, sans-serif;
+}
+
+
+/* layout finestra di navigazione */
+#menu {
+    display: flex;
+    height: 50px;
+    background-color: teal;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_item {
+    height: 30px;
+    width: 120px;
+    background-color: darkslategray;
+    border: 3px solid honeydew;
+    border-radius: 50px;
+    
+    font-size: 1.25rem;
+    font-family: Times, Times New Roman, serif;
+    text-align: center;
+    color: honeydew;
+}
+
+.nav_item:hover {
+    background-color: azure;
+    color: darkgray;
+    border: 3px solid darkgray;
+}
+
+/* layout finestra di navigazione - mobile */
+#tendina {
+    display: none;
+}
+
+.linea {
+    display: none;
+}
+
+@media (max-width: 540px) {
+    #menu .nav_item {
+        display: none;
+    }
+    
+    #menu {
+        justify-content: flex-end;
+    }
+    
+    #tendina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        
+        border: 3px solid honeydew;
+        border-radius: 8px;
+    }
+    
+    .tendina:hover {
+        border: 3px solid darkgray;
+    }
+    
+    .puntino {
+        display: block;
+        
+        width: 4px;
+        height: 4px;
+        margin: 2px;
+        
+        background-color: honeydew;
+        border-radius: 100px;
+    }
+    
+    .puntino:hover {
+        background-color: darkgray;
+    }
+}
+
+
+/* layout header */
+header {
+    background-image: url(https://wallpaper.dog/large/5554513.jpg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: relative;
+    z-index: -3;
+}
+
+#patina {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    z-index: -2;
+}
+
+#titolo {
+    font-size: 1.5rem;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: lightskyblue;
+    text-align: center;
+    
+    z-index: -1;
+}
+
+
+/* layout avatar */
+#info_utente {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    background-image: url(https://static.wikia.nocookie.net/joey-slikk-alt/images/e/e8/Mr_Incredible_%28Uncanny_Phase_1%29.png/revision/latest?cb=20220118185004);
+    
+    margin-top: -50px;
+    
+    height: 95px;
+    width: 95px;
+    background-size: contain;
+    
+    border: 5px solid black;
+    border-radius: 100px;
+}
+
+.nome_utente {
+    margin-top: -1px;
+    color: darkslategray;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+.stato_utente {
+    margin-top: -15px;
+    color: slategray;
+    font-style: italic;
+    
+    padding: 3px;
+    border-bottom: 1px solid slategray;
+}
+
+
+/* separatore */
+#separatore {
+    width: 66.67%;
+    height: 60px;
+    
+    margin: 0 auto;
+}
+
+
+/* layout corpo principale */
+#corpo_centrale {
+    margin: 0 auto;
+    width: calc(66.67% + 60px);
+}
+
+.contenitore {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.indici_numerici {
+    width: 50px;
+    padding-top: 2px;
+    
+    font-size: 1.75rem;
+    color: steelblue;
+    font-family: OCR A Std, monospace;
+    font-weight: bold;
+}
+
+.sezione {
+    margin-left: 40px;
+    width: calc(100% - 90px);
+}
+
+.titolo_sezione {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    color: steelblue;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.valutazione {
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 0px;
+    
+    font-family: Courier New, monospace;
+    
+    color: lightslategray;
+    border-bottom: 1px solid lightslategray;
+}
+
+.paragrafo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    font-family: American Typewriter, serif;
+}
+
+.commento {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.back5 {
+    background-image: url(https://i.ytimg.com/vi/BsKnxp3yEzY/maxresdefault.jpg);
+}
+
+.back4 {
+    background-image: url(https://i.ytimg.com/vi/cp7AXI1wI9Q/maxresdefault.jpg);
+}
+
+.back3 {
+    background-image: url(https://www.barbadillo.it/wp-content/uploads/2013/07/cacciatori-di-fantasmi-310x174.jpg);
+}
+
+.back2 {
+    background-image: url(https://www.cnet.com/a/img/resize/b6c3611e43107d1db5ef8c5a9442a19d650ca39f/2014/12/20/5b6002e7-cab5-49cc-9314-f067e90d23d7/mythbusters.jpg?auto=webp&fit=crop&height=675&width=1200);
+}
+
+.back1 {
+    background-image: url(https://programma.sorrisi.com/guidatv/uploads/media/cache/epg_program_large/uploads/epg/images/programseries/1/1/0/182011/originale/85.jpg);
+}
+
+.illustrazione {
+    height: 450px;
+    width: 100%px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* layout corpo principale - mobile */
+@media (max-width: 540px) {
+    .indici_numerici {
+        padding: 0px;
+        margin: 0 auto;
+    }
+    
+    .contenitore {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .titolo_sezione {
+        text-align: center;
+    }
+    
+    .valutazione {
+        margin: 0 auto;
+    }
+    
+    .illustrazione {
+        height: 225px;
+        background-size: contain;
+    }
+}
+
+
+/* layout footer */
+#corpo_conclusivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.dati {
+    text-align: center;
+    color: whitesmoke;
+    font-style: italic;
+}
